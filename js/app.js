@@ -2,9 +2,10 @@ window.onload= function() {
 	//We instantiate our model
 	const model = new DinnerModel();
 	
+	
 	// And create the instance of ExampleView
-	const exampleView = new ExampleView(document.querySelector("#exampleView"), model);
-
+	const sidebarView = new SidebarView(document.querySelector("#sidebarView"), model);
+	//const sidebarViewController = new SidebarViewController(model, sidebarView);
 	/**
 	 * IMPORTANT: app.js is the only place where you are allowed to
 	 * query for elements in the whole document.
